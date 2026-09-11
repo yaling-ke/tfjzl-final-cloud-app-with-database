@@ -51,7 +51,7 @@
                             <form action="{% url 'onlinecourse:enroll' course.id %}" method="post">
                                   {% csrf_token %}
                                   <input class="btn btn-primary"  type="submit"
-                                         value="{% if course.is_enrolled %}Enter{% else %}Enroll{% endif %} ">
+                                         value="{% if course.is_enrolled %}>Enter{% else %}Enroll{% endif %} ">
                             </form>
                           </div>
                         </div>
